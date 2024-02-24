@@ -5,9 +5,9 @@
     --success-color: green;
     --failure-color: tomato;
     --warning-color: gold;
-    --background-color: rgba(200,200,200,.8);
+    --background-color: hsl(0, 0%, 91%);
+    --lighter-background-color: hsl(0, 0%, 94%);
 
-    background: url("https://upload.wikimedia.org/wikipedia/commons/0/09/Four_Leaf_Clover_068.jpg") no-repeat;
 }
 div.navbar {
     float: left;
@@ -50,31 +50,46 @@ div.vidblock {
     display: inherit;
     padding: 1rem;
 }
-div.flex-test {
-    display: inline-flex;
-    flex-wrap: wrap;
-    grid-column: 3;
+div.city {
+    display: flex;
+    width: 95%;
+    padding: 2rem 2rem;
+    margin: 2rem 0rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 10px 5px hsla(0, 0%, 40%, 0.2);
+    box-sizing: border-box;
+    transition: .6s;
+    background-color: var(--lighter-background-color);
 }
-div.boc {
-    padding: 1rem;
-    min-width: 20%;
-    min-height: 5rem;
-    border: 3px solid hsl(210 50% 40%);
-    --base-background: hsl(130, 50%, 40%);
-    background-color: var(--base-background);
+div.city:hover {
+    transition: .6s;
+    box-shadow: 0px 7px 13px 5px hsla(0, 0%, 35%, 0.25);
 }
-#fbox1 {
-    justify-content: center;
+div.text {
+    width: 66%;
+}
+div.pic {
+    margin: 1rem;
+    width: 33%;
+}
+img {
+    padding: auto;
+    border-radius: .5rem;
+    box-shadow: 0px 4px 7px 3px hsla(0, 0%, 40%, 0.2);
     width: 100%;
 }
 .main-content {
     display: table;
     z-index: 1;
-    width: 70%;
+    width: 80%;
     height: 100%;
     min-width: 10rem;
-    top: 0rem;
-    margin: auto;
-    padding: 0rem 4rem 4rem 4rem;
+    top: 0;
+    margin: 0rem auto;
+    padding: 0rem;
+}
+body {
+    margin: 0;
+    padding: 0;
     background: var(--background-color); 
 }
