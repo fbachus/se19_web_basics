@@ -1,0 +1,80 @@
+:root {
+    --text-color: black;
+    --primary-color: orange;
+    --secondary-color: yellow;
+    --success-color: green;
+    --failure-color: tomato;
+    --warning-color: gold;
+    --background-color: rgba(200,200,200,.8);
+
+    background: url("https://upload.wikimedia.org/wikipedia/commons/0/09/Four_Leaf_Clover_068.jpg") no-repeat;
+}
+div.navbar {
+    float: left;
+    display: block;
+    top: 0;
+    width: 100%;
+    margin: 0 0 5rem 0;
+    padding: 0;
+}
+li.nav-element {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-right: .1rem solid black;
+}
+li.nav-element:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+li a {
+    display: block;
+    padding: .5rem 1rem .5rem 1rem;
+    text-decoration: none;
+    color: var(--textcolor);
+}
+div.vid-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+div.vidblock {
+    display: inherit;
+    padding: 1rem;
+}
+div.flex-test {
+    display: inline-flex;
+    flex-wrap: wrap;
+    grid-column: 3;
+}
+div.boc {
+    padding: 1rem;
+    min-width: 20%;
+    min-height: 5rem;
+    border: 3px solid hsl(210 50% 40%);
+    --base-background: hsl(130, 50%, 40%);
+    background-color: var(--base-background);
+}
+#fbox1 {
+    justify-content: center;
+    width: 100%;
+}
+.main-content {
+    display: table;
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+    min-width: 10rem;
+    top: 0rem;
+    margin: auto;
+    padding: 0rem 4rem 4rem 4rem;
+    background: var(--background-color); 
+}

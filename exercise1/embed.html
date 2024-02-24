@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watch a video | SE_19 first steps</title>
+        <link rel="stylesheet" type="text/css" href="style/style_main.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="main-content">
+            <div class=navbar> 
+                <ul>
+                    <li class=nav-element><a href="index.html">Home</a></li>
+                    <li class=nav-element>
+                        <a href="embed.html">Watch a local video</a></li>
+                    <li class=nav-element><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <h1>Watch a video</h1><br />
+            <div class=vid-grid>
+                <div class=vidblock width=25%>
+                    <video width=256px height=256px autoplay muted loop controls>
+                        <source src="content/cat_fishe.mov" type="video/mp4">
+                        <source src="content/cathedral.mp4" type="video/mp4">
+                        Your browser does not support the video tag
+                    </video><br />
+                </div>
+                <div class=vidblock width=25%>
+                    <iframe width=256px height=256px
+                            src="https://www.youtube.com/embed/Vi7ULYt2ha0"
+                            title="meet eggdog" frameborder="0"
+                            allow="accelerometer; autoplay;
+                               clipboard-write; encrypted-media; gyroscope;
+                               picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe><br />
+                </div>
+                <div class=vidblock width=25%>
+                    <video width=256px height=256px autoplay muted loop controls>
+                        <source src="https://www.youtube.com/embed/Vi7ULYt2ha0" type="video/mp4">
+                        <source src="https://youtu.be/Vi7ULYt2ha0" type="video/mp4">
+                        Your browser does not support the video tag
+                    </video><br />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
