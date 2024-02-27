@@ -6,40 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="navbar row hamburger-menu">
+            <ul>
+                <li class="nav-element responsive-hidden-text col-s12"><a href=".">Hover me</a></li>
+                <li class="nav-element col-s2 col-2 col-l2"><a href="index.html">Home</a></li>
+                <li class="nav-element col-s6 col-6 col-l4">
+                    <a href="embed.html">Watch a local video</a></li>
+                <li class="nav-element col-s4 col-4 col-l3"><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
         <div class="main-content">
-            <div class=navbar> 
-                <ul>
-                    <li class=nav-element><a href="index.html">Home</a></li>
-                    <li class=nav-element>
-                        <a href="embed.html">Watch a local video</a></li>
-                    <li class=nav-element><a href="about.html">About Us</a></li>
-                </ul>
+            <div class=row>
+                <h1>Watch a video</h1><br />
             </div>
-            <h1>Watch a video</h1><br />
-            <div class=vid-grid>
-                <div class=vidblock width=25%>
-                    <video width=256px height=256px autoplay muted loop controls>
-                        <source src="content/cat_fishe.mov" type="video/mp4">
-                        <source src="content/cathedral.mp4" type="video/mp4">
-                        Your browser does not support the video tag
-                    </video><br />
-                </div>
-                <div class=vidblock width=25%>
-                    <iframe width=256px height=256px
-                            src="https://www.youtube.com/embed/Vi7ULYt2ha0"
-                            title="meet eggdog" frameborder="0"
-                            allow="accelerometer; autoplay;
-                               clipboard-write; encrypted-media; gyroscope;
-                               picture-in-picture; web-share"
-                            allowfullscreen>
-                    </iframe><br />
-                </div>
-                <div class=vidblock width=25%>
-                    <video width=256px height=256px autoplay muted loop controls>
-                        <source src="https://www.youtube.com/embed/Vi7ULYt2ha0" type="video/mp4">
-                        <source src="https://youtu.be/Vi7ULYt2ha0" type="video/mp4">
-                        Your browser does not support the video tag
-                    </video><br />
+            <div class=row>
+                <div class="vidgrid col-12">
+                    <div class="vidblock col-3 col-4 col-s-4">
+                        <video width=360px height=360px autoplay muted loop controls>
+                            <source src="content/cat_fishe.mov" type="video/mp4">
+                            Your browser does not support the video tag
+                        </video><br />
+                    </div>
+                    <div class="vidblock col-l-4 col-6 col-s-6">
+                        <video width=640px height=360px controls>
+                            <source src="content/cathedral.mp4" type="video/mp4">
+                            Your browser does not support the video tag
+                        </video><br />
+                    </div>
                 </div>
             </div>
         </div>
