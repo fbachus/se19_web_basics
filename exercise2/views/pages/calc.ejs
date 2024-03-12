@@ -1,0 +1,11 @@
+<%- include('../parts/head') %>
+<%- include('../parts/header') %>
+<body>
+    <h1>Simple calculator</h1>
+    <form action='/calc' method="POST">
+        <input type="number" name="add1" placeholder="first variable to add"><br>
+        <input type="number" name="add2" placeholder="second variable to add"><br>
+        <button>Get the sum!</button>
+    </form>
+</body>
+<%- include('../parts/footer') %>
